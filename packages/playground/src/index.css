@@ -1,0 +1,18 @@
+:root {
+  --primary-color: white;
+  --primary-bg-color: black;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  color: var(--primary-color);
+  background-color: var(--primary-bg-color);
+}
+
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    --primary-color: black;
+    --primary-bg-color: white;
+  }
+}

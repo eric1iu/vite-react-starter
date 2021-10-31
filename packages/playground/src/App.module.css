@@ -1,0 +1,29 @@
+.logo {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & img {
+    height: 30vmin;
+    margin-bottom: 16px;
+    @media (prefers-reduced-motion: no-preference) {
+      & {
+        animation: logo-spin infinite 20s linear;
+      }
+    }
+  }
+  & a {
+    margin: 6px;
+    font-size: 21px;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
